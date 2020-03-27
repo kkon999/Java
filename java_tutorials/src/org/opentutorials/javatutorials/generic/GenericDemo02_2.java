@@ -1,22 +1,37 @@
 package org.opentutorials.javatutorials.generic;
 
-class StudentInfo03{
-    public int grade;
-    StudentInfo03(int grade){ this.grade = grade; }
+class StudentInfo2{
+	public int grade;
+	
+	StudentInfo2(int grade)	// int 데이터 타입의 grade인자를 갖는 생성자
+	{
+		this.grade = grade;
+	}
 }
-class EmployeeInfo03{
-    public int rank;
-    EmployeeInfo03(int rank){ this.rank = rank; }
+
+class EmployeeInfo2{
+	public int rank;
+	EmployeeInfo2(int rank)  // int 데이터 타입의 rank인자를 갖는 생성자
+	{
+		this.rank = rank;
+	}
 }
-class Person03{// 2개로 나눠져 있던 class StudentPerson과 EmployeePerson을 중복제거를 위해 Person03으로 Object화 하였다
-    public Object info;
-    Person03(Object info){ this.info = info; }
+
+class Person2{				// 데이터 중복제거를 위해 StudentPerson,EmployeePerson 을 Person으로 통합
+	public Object info;		// 모든 클래스의 상위인 Object를 데이터 타입으로 설정
+	Person2(Object info){
+		this.info = info;
+	}
 }
-public class GenericDemo03 {
-    public static void main(String[] args) {
-        Person03 p1 = new Person03("부장");		// Object화 된 Person3에 엉뚱한 값인 "부장"이 대입되어도 오류가 발생하지 않고 컴파일시 오류가 발생한다.
-        										// 이러한 오류를 해결하기 위해 Gerneric 을 사용한다.
-        EmployeeInfo ei = (EmployeeInfo)p1.info;
-        System.out.println(ei.rank);
-    }
+
+public class GenericDemo02_2 {
+	
+	public static void main(String[] args) {
+		
+		Person2 p1 = new Person2("부장");				// Person2 생성자의 데이터 타입이 Object이기 때문에 어떤 값이든 들어 갈 수 있어서 데이터 타입이 안전하지 못하다
+		EmployeeInfo2 ei = (EmployeeInfo2)p1.info;  // p1의 info는 일반적인 Object 데이터 타입입니다.
+												    // ei는 구체적인 데이터 타입인 int이기 때문에 형변환을 해야 한다.
+		System.out.println(ei.rank);
+		
+	}
 }
