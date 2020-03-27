@@ -5,7 +5,7 @@ class Person<T>{
     public T info;
 }
  
-public class GenericDemo {
+public class GenericDemo01 {
  
     public static void main(String[] args) {
     	
