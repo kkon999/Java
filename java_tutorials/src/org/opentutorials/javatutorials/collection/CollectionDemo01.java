@@ -2,7 +2,7 @@ package org.opentutorials.javatutorials.collection;
 
 import java.util.ArrayList;
 
-public class ArrayListDemo {
+public class CollectionDemo01 {
 	 
     public static void main(String[] args) {
         String[] arrayObj = new String[2];
@@ -26,5 +26,4 @@ public class ArrayListDemo {
             System.out.println(al.get(i));
         }
     }
- 
 }
