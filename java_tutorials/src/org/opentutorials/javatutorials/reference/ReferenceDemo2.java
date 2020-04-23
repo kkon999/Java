@@ -1,11 +1,6 @@
 package org.opentutorials.javatutorials.reference;
 
-class A{
-    public int id;
-    A(int id){
-        this.id = id;
-    }
-}
+
 public class ReferenceDemo2 {
  
     public static void runValue(){
