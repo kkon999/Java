@@ -5,10 +5,10 @@ package org.opentutorials.javatutorials.interfaces.example1;
 class CLaulatorDummy{
 	public void setOprands (int first , int second, int third){}
 	
-	public void sum() {
+	public int sum() {
 		return 60;
 	}
-	public void avg() {
+	public int avg() {
 		return 20;
 	}
 }

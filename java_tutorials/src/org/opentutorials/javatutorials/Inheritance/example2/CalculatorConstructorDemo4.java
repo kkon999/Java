@@ -2,9 +2,7 @@ package org.opentutorials.javatutorials.Inheritance.example2;
 
 class Calculator {
     int left, right;
-    
-    
-    
+        
     public Calculator(int left, int right) { 	
     	this.left = left;
     	this.right = right;

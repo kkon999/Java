@@ -10,7 +10,7 @@ public class OverloadingDemo2 extends OverloadingDemo{
         od.A();
         od.A(1);
         od.A("coding everybody");
-        od.A("coding everybody","coding everybody");
+        od.A("coding everybody");
     }
 
 }
