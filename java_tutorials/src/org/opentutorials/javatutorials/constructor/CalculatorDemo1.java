@@ -5,7 +5,7 @@ class Calculator{
 	
 	int right,left;
 	
-	public Calculator(int left , int right) { // 생성자,construtor 클래스와 같은 명의 메소드를 정의 해서 가장 먼저 실행되는 작업으로 설정
+	public Calculator(int left , int right) { // 생성자,constructor 클래스와 같은 명의 메소드를 정의 해서 가장 먼저 실행되는 작업으로 설정
 		this.left = left;
 		this.right = right;
 	}
